@@ -1,23 +1,56 @@
-h4 {
-  margin-top: 25px;
-}
-.row {
-  margin-bottom: 20px;
-}
-.row .row {
-  margin-top: 10px;
-  margin-bottom: 0;
-}
-[class*="col-"] {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #eee;
-  background-color: rgba(86,61,124,.15);
-  border: 1px solid #ddd;
-  border: 1px solid rgba(86,61,124,.2);
+body{
+  background-color: pink;
+  
 }
 
-hr {
+#navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  color: white;
+  font-family: Arial;
+  text-color: Purple;
+  
+}
+
+#navbar li {
+    float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1px 10px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  #navbar li {
+    float: none;
+    width: 100%;
+  }
+}
+
+#navbar li:hover {
+  background: pink;
+  color: white;
+}
+
+/* Create two equal columns 
+that sits next to each other */
+#welcome-section{
   margin-top: 40px;
-  margin-bottom: 40px;
+  height: 100vh;
+  width: 100vw;
+  background-color: purple;
+  text-align: center;
+  
+}
+
+#projects {
+  text-align: center;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
 }
