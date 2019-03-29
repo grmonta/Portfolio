@@ -32,6 +32,19 @@ a:hover {
   height: 100vh;
   font-family: 'Righteous', cursive;
 }
+.intro button {
+  background-color: #17252a;
+  color: #def2f1;
+  margin-top: 20px;
+  padding: 10px;
+  width: 150px;
+  font-family: 'Righteous', cursive;
+}
+
+.intro button:hover {
+  border: solid 2px white;
+  width: 200px;
+}
 
 .aboutMe {
   padding: 20px;
@@ -39,6 +52,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  color: #def2f1;
 }
 
 #profile-pic {
@@ -49,11 +63,11 @@ a:hover {
   border-radius: 5%;
 }
 
-.dogpic {
-  display: flex;
-  justify-content: center;
-}
 .dogPic img {
-  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-radius: 5%;
+  padding: 5px;
 }
