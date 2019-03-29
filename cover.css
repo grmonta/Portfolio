@@ -1,0 +1,59 @@
+body {
+  background-color: #17252a;
+  font-family: 'Righteous', cursive;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #def2f1;
+}
+
+.topnav a {
+  color: #17252a;
+  padding: 3px;
+
+  text-decoration: none;
+
+  font-family: 'Righteous', cursive;
+}
+
+a:hover {
+  background-color: #2b7a78;
+  color: #def2f1;
+}
+
+.intro {
+  padding: 60px;
+  text-align: center;
+  background-image: url(cloudforest.jpg);
+  color: #17252a;
+  height: 100vh;
+  font-family: 'Righteous', cursive;
+}
+
+.aboutMe {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#profile-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 5%;
+}
+
+.dogpic {
+  display: flex;
+  justify-content: center;
+}
+.dogPic img {
+  padding: 5px;
+  border-radius: 5%;
+}
