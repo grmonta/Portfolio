@@ -3,11 +3,18 @@ body {
   font-family: 'Righteous', cursive;
 }
 
+.page-wrapper {
+  margin-left: 2px;
+  margin-right: 2px;
+}
 .topnav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #def2f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .topnav a {
@@ -48,6 +55,8 @@ a:hover {
 
 .aboutMe {
   padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,4 +79,19 @@ a:hover {
   width: 50%;
   border-radius: 5%;
   padding: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #def2f1;
+}
+.footer a {
+  color: #17252a;
+  padding: 3px;
+
+  text-decoration: none;
+
+  font-family: 'Righteous', cursive;
 }
