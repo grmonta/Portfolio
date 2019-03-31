@@ -44,34 +44,27 @@ const myQuestions = [
 
 (function() {
   function buildQuiz() {
-    // we'll need a place to store the HTML output
     const output = [];
 
-    // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
-      // we'll want to store the list of answer choices
       const answers = [];
 
-      // and for each available answer...
       for (letter in currentQuestion.answers) {
-        // ...add an HTML radio button
         answers.push(
-          `<label>
-            <input type="radio" name="question${questionNumber}" value="${letter}">
-            ${letter} :
-            ${currentQuestion.answers[letter]}
-          </label>`
+          ` <div class="form-check">
+        <input class="form-check-input" type="radio" name="question${questionNumber}" value="${letter}">
+          <label class="form-check-label" for="exampleRadios1">
+            ${letter}: ${currentQuestion.answers[letter]}
+  </label>
+</div>`
         );
       }
-
-      // add this question and its answers to the output
       output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
-        <div class="answers"> ${answers.join('')} </div>`
+        `<div class="question pb-1"> ${currentQuestion.question} </div>
+        <div class="answers pl-1"> ${answers.join('')} </div>`
       );
     });
 
-    // finally combine our output list into one string of HTML and put it on the page
     quizContainer.innerHTML = output.join('');
   }
 
@@ -85,17 +78,14 @@ const myQuestions = [
       if (userAnswer === currentQuestion.correctAnswer) {
         numCorrect++;
         answerContainers[questionNumber].style.color = 'darkgreen';
-
+      } else {
         answerContainers[questionNumber].style.color = 'red';
       }
     });
     resultsContainer.innerHTML = numCorrect + ' out of ' + myQuestions.length;
   }
 
-  //display quiz right away, init
   buildQuiz();
-
-  //on submit , show ther results
 
   submitButton.addEventListener('click', showResults);
 })();

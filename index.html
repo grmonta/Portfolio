@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="cover.css" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -15,67 +22,170 @@
       href="https://fonts.googleapis.com/css?family=Lato:900|Righteous"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="cover.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="page-wrapper">
-      <div class="topnav">
-        <a id="homeButton" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#Portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
+    <div class="container-fluid">
+      <div class="page-wrapper">
+        <!-- NAVBAR -->
+        <!-- <div class="topnav nav">
+          <a class="nav-link" id="homeButton" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
 
-      <div class="intro">
-        <h1>GIOVAN MONTANARO</h1>
-        <p>
-          I'm a Chicago based, west coast dreaming, web designer & fullstack
-          developer focused on making things beautiful & efficient one keystroke
-          at a time.
-        </p>
-        <button href="#portfolio">WANDER IN</button>
-      </div>
 
-      <div class="aboutMe" id="about">
-        <img id="profile-pic" src="profileSq.jpg" alt="profile picture" />
-        <h3>About Me</h3>
+        </div> -->
+        <!-- 
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul> -->
 
-        <p>
-          I started my career thinking I was going to get into the social
-          sciences. I've had a lot of exposure to different industries and
-          positions with in companies which gives me a unique background and
-          wide berth of skills. In 2018, I found myself wanting to learn how
-          websites were made out of curiousity. A year later and I decided that
-          it is time to pursue full-stack development full time, so here I am,
-          and probably why you are here also.
-        </p>
-        <p>
-          On a personal level I'm happiest with a dog by my side and whem I'm
-          learning something new. I just want to make the world a better place
-          for current and future generations.
-        </p>
-        <p>
-          <italic
-            >"Not all who wander are lost, sometimes they just need to try out a
-            couple of careers..."</italic
+        <nav class="navbar fixed-top navbar-expand-sm bg-light navbar-light ">
+          <!-- Toggler/collapsibe Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
           >
-        </p>
-        <div class="dogPic">
-          <img src="marleySqSm.jpg" alt="puggle" />
-          <img src="ReggieSmall.jpg" alt="bulldog" />
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- INTRO -->
+        <div class="intro" id="home">
+          <h1>GIOVAN MONTANARO</h1>
+          <p>
+            I'm a Chicago based, west coast dreaming, web designer & fullstack
+            developer focused on making things beautiful & efficient one
+            keystroke at a time.
+          </p>
+          <button href="#projects">WANDER IN</button>
+        </div>
+
+        <!-- ABOUT ME -->
+        <div class="aboutMe" id="about">
+          <img id="profile-pic" src="profileSq.jpg" alt="profile picture" />
+          <h3>About Me</h3>
+
+          <p>
+            I started my career thinking I was going to get into the social
+            sciences. I've had a lot of exposure to different industries and
+            positions with in companies which gives me a unique background and
+            wide berth of skills. In 2018, I found myself wanting to learn how
+            websites were made out of curiousity. A year later and I decided
+            that it is time to pursue full-stack development full time, so here
+            I am, and probably why you are here also.
+          </p>
+          <p>
+            On a personal level I'm happiest with a dog by my side and whem I'm
+            learning something new. I just want to make the world a better place
+            for current and future generations.
+          </p>
+          <p>
+            <italic
+              >"Not all who wander are lost, sometimes they just need to try out
+              a couple of careers..."</italic
+            >
+          </p>
+          <div class="dogPic">
+            <img src="marleySqSm.jpg" alt="puggle" />
+            <img src="ReggieSmall.jpg" alt="bulldog" />
+          </div>
+        </div>
+
+        <!-- PROJECT SECTION -->
+        <div class="project-container">
+          <div
+            class=" card-column mb-5 d-flex justify-content-center"
+            id="projects"
+          >
+            <div class="card m-3">
+              <img class="card-img-top" src="quizc.jpg" alt="Card image" />
+              <div class="card-body bg-secondary">
+                <h4 class="card-title">JS Quiz</h4>
+                <p class="card-text">
+                  Using BootStrap, CSS & JavaScript to create a short fun quiz
+                  on one's knowledge of Chicago
+                </p>
+                <a
+                  href="projects/jsquiz/index.html"
+                  class="btn btn-light stretch-link"
+                  >See Quiz</a
+                >
+              </div>
+            </div>
+
+            <div class="card m-3">
+              <img
+                class="card-img-top"
+                src="gifgenerator.jpg"
+                alt="Card image"
+              />
+              <div class="card-body bg-secondary">
+                <h4 class="card-title">GIFs</h4>
+                <p class="card-text">
+                  Using BootStrap, CSS & JavaScript to create a GIF generator
+                  using the Giphy API
+                </p>
+                <a
+                  href="projects/giphyGenerator/index.html"
+                  class="btn btn-light stretch-link"
+                  >See GIFs</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------FOOTER-------------- -->
+        <div class="footer" id="contact">
+          <span>
+            <a href="#">
+              <i class="fas fa-envelope-square">giovanmontanaro@gmail.com</i></a
+            >
+
+            <a href="https://twitter.com/See_G_Code"
+              ><i class="fab fa-twitter-square"> </i> @See_G_Code</a
+            ></span
+          >
         </div>
       </div>
-      <div class="footer" id="contact">
-        <span>
-          <a href="#">
-            <i class="fas fa-envelope-square">giovanmontanaro@gmail.com</i></a
-          >
-
-          <a href="https://twitter.com/See_G_Code"
-            ><i class="fab fa-twitter-square"> </i> @See_G_Code</a
-          ></span
-        >
-      </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -4,19 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="quizStyle.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="page-wrapper">
-      <div id="title"><h1>Chicago Style</h1></div>
-      <div id="quizSection">
-        <div id="quiz"></div>
-        <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
+      <div class="container ">
+        <div id="title" class="mt-2"><h1>Chicago Style</h1></div>
+        <div id="quizSection">
+          <div id="quiz"></div>
+          <button class="btn btn-danger" id="submit">Submit Quiz</button>
+          <div id="results"></div>
+        </div>
       </div>
     </div>
-
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+      crossorigin="anonymous"
+    ></script>
     <script src="quiz.js"></script>
   </body>
 </html>
